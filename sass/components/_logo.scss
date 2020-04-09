@@ -1,0 +1,30 @@
+.logoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: 2rem;
+
+        @include respond-to('large') {
+                margin-top: 0;
+        }
+}
+.Logo {
+        background-image: url('../../img/logo.png');
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+        background-position: center;
+
+        &__name {
+                margin-top: -1rem;
+                font-size: 0.8rem;
+                color: $light-gray;
+                font-weight: 700;
+
+                @include respond-to('large') {
+                        font-size: 1rem;
+                }
+        }
+}

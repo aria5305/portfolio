@@ -1,0 +1,74 @@
+.heading__hero {
+        margin-top: 3rem;
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        @include respond-to('large') {
+                font-size: 5rem;
+                padding-top: 5rem;
+        }
+}
+
+.heading__primary {
+        position: relative;
+
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0 auto;
+        text-transform: uppercase;
+        color: $light-blue;
+
+        &--orange {
+                color: $orange;
+        }
+
+        &::before {
+                content: '';
+                position: absolute;
+                top: 120%;
+                left: 25%;
+                width: 50%;
+                height: 1px;
+                background-color: $light-gray;
+                padding: 0rem;
+        }
+}
+
+.label {
+        color: $light-gray;
+}
+.highlight {
+        &--orange {
+                color: $orange;
+                font-weight: 700;
+        }
+
+        &--blue {
+                color: $light-blue;
+                font-weight: 700;
+        }
+}
+
+.paragraph {
+        font-size: 1.5rem;
+        color: $dark-blue;
+        margin: 0.7rem;
+        padding-top: 1rem;
+
+        &--bold {
+                font-weight: 700;
+                text-transform: uppercase;
+        }
+
+        &--small,
+        &--description {
+                margin-top: 0.2rem;
+                color: $light-gray;
+                font-size: 1.2rem;
+                padding-top: 0;
+        }
+
+        &--description {
+                margin-top: 2.5rem;
+        }
+}

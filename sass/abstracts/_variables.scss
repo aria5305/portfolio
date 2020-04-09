@@ -1,0 +1,25 @@
+$dark-blue: #00275e;
+$orange: #feb729;
+$light-blue: #31c3e7;
+$light-gray: #a8b1b8;
+$white: #fff;
+$black: #000;
+$fa-font-path: '../../webfonts';
+
+$breakpoints: (
+        'small': (
+                max-width: 600px
+        ),
+        'medium': (
+                min-width: 600px
+        ),
+        'large': (
+                min-width: 900px
+        ),
+        'huge': (
+                min-width: 1200px
+        ),
+        'ultra': (
+                min-width: 2000px
+        )
+);

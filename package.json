@@ -1,0 +1,18 @@
+{
+  "name": "portfolio2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch sass -o css",
+    "live": "live-server",
+    "start": "npm-run-all --parallel live scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

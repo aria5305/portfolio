@@ -1,0 +1,41 @@
+footer {
+        background-color: $orange;
+        color: $light-gray;
+        padding: 2rem 0 2rem 0;
+        width: 100%;
+}
+
+.footerContainer {
+        // border: 1px solid red;
+        color: $white;
+
+        text-align: center;
+        // margin-top: 2rem;
+}
+
+.footerLinks {
+        list-style: none;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        & a {
+                margin: 0 1.5rem;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                // padding: 0 1rem;
+                justify-content: center;
+                font-size: 1rem;
+                transition: color 0.3s ease;
+                &:visited {
+                        color: inherit;
+                }
+
+                &:hover,
+                &:active {
+                        color: $dark-blue;
+                }
+        }
+}

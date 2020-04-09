@@ -1,0 +1,13 @@
+.headerContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 3rem;
+
+        @include respond-to('large') {
+                justify-content: space-evenly;
+                align-items: flex-end;
+                height: auto;
+                flex-direction: row;
+        }
+}

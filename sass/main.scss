@@ -1,0 +1,18 @@
+@import 'abstracts/variables'; 
+@import 'abstracts/mixins'; 
+@import 'abstracts/fontAwesome'; 
+
+@import 'base/base';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'components/logo';
+@import 'components/portfolio';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/navigation';
+
+@import 'pages/home';
+
+///https://sass-guidelin.es/#the-7-1-pattern
