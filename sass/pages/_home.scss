@@ -5,8 +5,16 @@
         margin-top: 10rem;
         width: 100%;
         position: relative;
+        border: 1px solid $dark-blue;
 
+        @include respond-to('medium') {
+                margin-top: 20rem;
+
+                border: none;
+                height: 50vh;
+        }
         @include respond-to('large') {
+                margin-top: 10rem;
                 height: 35rem;
         }
 
@@ -48,7 +56,7 @@
 
 .about {
         margin-top: 13.5rem;
-        padding: 2rem 1rem 5rem 1rem;
+        padding: 2rem 0rem 5rem 0rem;
         width: 100%;
         height: auto;
         background-color: #eee;
@@ -59,8 +67,9 @@
         }
 
         &__container {
-                border-radius: 2rem;
+                // border-radius: 2rem;
                 display: flex;
+                // border: 1px solid red;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -69,9 +78,25 @@
                 text-align: center;
                 background-color: $white;
 
+                @include respond-to('large') {
+                        flex-direction: row;
+                        width: 95%;
+                        margin: 5rem auto;
+                }
+        }
+
+        &__image {
+                width: 70%;
+        }
+        &__intro {
+                text-align: left;
                 @include respond-to('medium') {
-                        width: 80%;
-                        margin: 2rem auto;
+                        width: 100%;
+                        padding: 1rem;
+                }
+                @include respond-to('large') {
+                        width: 40%;
+                        padding: 2rem;
                 }
         }
 
@@ -90,6 +115,8 @@
                 & div {
                         display: flex;
                         flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                 }
         }
 }

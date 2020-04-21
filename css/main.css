@@ -26,40 +26,58 @@ body {
   font-size: 1.5rem;
   overflow-x: hidden; }
 
-.heading__hero {
+.primaryHeading__hero {
   margin-top: 3rem;
   font-size: 3.5rem;
   text-align: center;
   margin-bottom: 3rem; }
   @media (min-width: 900px) {
-    .heading__hero {
-      font-size: 5rem;
-      padding-top: 5rem; } }
+    .primaryHeading__hero {
+      font-size: 6rem;
+      padding-top: 5rem;
+      margin-bottom: 1rem; } }
 
-.heading__primary {
+.secondaryHeading__hero {
+  margin-bottom: 3rem;
+  font-size: 2rem; }
+  @media (min-width: 900px) {
+    .secondaryHeading__hero {
+      font-size: 3rem; } }
+
+.aboutHeading__primary,
+.contactHeading__primary {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 5rem;
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
-  color: #31c3e7; }
-  .heading__primary--orange {
-    color: #feb729; }
-  .heading__primary::before {
-    content: '';
+  color: #141c4d;
+  z-index: 1; }
+  .aboutHeading__primary--orange,
+  .contactHeading__primary--orange {
+    color: #fcc224; }
+  .aboutHeading__primary::before,
+  .contactHeading__primary::before {
     position: absolute;
-    top: 120%;
-    left: 25%;
-    width: 50%;
-    height: 1px;
-    background-color: #a8b1b8;
+    font-size: 20rem;
+    color: rgba(255, 255, 255, 0.5);
+    top: -120%;
+    left: 0%;
+    width: 100%;
+    z-index: -1;
     padding: 0rem; }
 
+.aboutHeading__primary::before {
+  content: 'ABOUT ME'; }
+
+.contactHeading__primary::before {
+  content: 'CONTACT ME'; }
+
 .label {
-  color: #a8b1b8; }
+  color: #6b8fa8; }
 
 .highlight--orange {
-  color: #feb729;
+  color: #fcc224;
   font-weight: 700; }
 
 .highlight--blue {
@@ -68,7 +86,7 @@ body {
 
 .paragraph {
   font-size: 1.5rem;
-  color: #00275e;
+  color: #141c4d;
   margin: 0.7rem;
   padding-top: 1rem; }
   .paragraph--bold {
@@ -76,24 +94,33 @@ body {
     text-transform: uppercase; }
   .paragraph--small, .paragraph--description {
     margin-top: 0.2rem;
-    color: #a8b1b8;
+    color: #6b8fa8;
     font-size: 1.2rem;
     padding-top: 0; }
   .paragraph--description {
     margin-top: 2.5rem; }
 
+.tag {
+  background-color: #fcc224;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 32%;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem; }
+
 .btn {
-  border: 1px solid #feb729;
+  border: 1px solid #fcc224;
   color: rgba(255, 255, 255, 0.9);
-  background-color: #feb729;
+  background-color: #fcc224;
   padding: 1.5rem 2.5rem;
   font-weight: 700;
   margin-top: 3rem;
-  border-radius: 1.5rem;
   transition: all 0.3s ease-in; }
   .btn:hover, .btn:active {
     background-color: #fff;
-    color: #feb729; }
+    color: #fcc224; }
   .btn:focus {
     outline: none; }
   .btn--blue {
@@ -138,7 +165,7 @@ body {
   .Logo__name {
     margin-top: -1rem;
     font-size: 0.8rem;
-    color: #a8b1b8;
+    color: #6b8fa8;
     font-weight: 700; }
     @media (min-width: 900px) {
       .Logo__name {
@@ -146,34 +173,37 @@ body {
 
 .portfolio {
   text-align: center; }
+  @media (min-width: 600px) {
+    .portfolio {
+      flex-direction: column; } }
   .portfolio__container {
+    border: 1px solid red;
     display: grid;
-    margin-top: 2rem;
-    padding: 1rem;
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr); }
+    margin: 2rem;
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); }
   .portfolio__description {
     margin-top: 2rem; }
   .portfolio__image--1 {
     background-image: url("../../img/toDo.PNG");
     width: 100%;
-    height: 20rem;
     background-size: cover;
-    background-position: center; }
+    background-position: top left; }
   .portfolio__item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    padding: 0.5rem;
-    padding-bottom: 2rem;
     margin-top: 2rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
+    transition: all 0.3s; }
+    .portfolio__item:hover {
+      cursor: pointer;
+      transform: translateY(-2px);
+      box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.75); }
 
 footer {
-  background-color: #feb729;
-  color: #a8b1b8;
+  background-color: #fcc224;
+  color: #6b8fa8;
   padding: 2rem 0 2rem 0;
   width: 100%; }
 
@@ -197,7 +227,7 @@ footer {
     .footerLinks a:visited {
       color: inherit; }
     .footerLinks a:hover, .footerLinks a:active {
-      color: #00275e; }
+      color: #141c4d; }
 
 .headerContainer {
   width: 100%;
@@ -277,7 +307,7 @@ footer {
     color: #232323;
     transition: all 0.3s ease-in; }
     .menuToggle__link:hover {
-      color: #feb729; }
+      color: #fcc224; }
     @media (min-width: 900px) {
       .menuToggle__link:hover {
         color: inherit; }
@@ -333,9 +363,16 @@ footer {
   padding: 0 2rem;
   margin-top: 10rem;
   width: 100%;
-  position: relative; }
+  position: relative;
+  border: 1px solid #141c4d; }
+  @media (min-width: 600px) {
+    .hero {
+      margin-top: 20rem;
+      border: none;
+      height: 50vh; } }
   @media (min-width: 900px) {
     .hero {
+      margin-top: 10rem;
       height: 35rem; } }
   @media (min-width: 1200px) {
     .hero {
@@ -366,7 +403,7 @@ footer {
 
 .about {
   margin-top: 13.5rem;
-  padding: 2rem 1rem 5rem 1rem;
+  padding: 2rem 0rem 5rem 0rem;
   width: 100%;
   height: auto;
   background-color: #eee;
@@ -375,7 +412,6 @@ footer {
     .about {
       padding-top: 5rem; } }
   .about__container {
-    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,10 +420,23 @@ footer {
     margin-top: 2rem;
     text-align: center;
     background-color: #fff; }
-    @media (min-width: 600px) {
+    @media (min-width: 900px) {
       .about__container {
-        width: 80%;
-        margin: 2rem auto; } }
+        flex-direction: row;
+        width: 95%;
+        margin: 5rem auto; } }
+  .about__image {
+    width: 70%; }
+  .about__intro {
+    text-align: left; }
+    @media (min-width: 600px) {
+      .about__intro {
+        width: 100%;
+        padding: 1rem; } }
+    @media (min-width: 900px) {
+      .about__intro {
+        width: 40%;
+        padding: 2rem; } }
   .about__skills {
     display: grid;
     margin-top: 2rem;
@@ -400,7 +449,9 @@ footer {
         grid-template-columns: repeat(3, 1fr); } }
     .about__skills div {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
 
 .portfolio {
   margin-top: 2rem; }
@@ -459,7 +510,7 @@ footer {
     .contactForm input:focus,
     .contactForm textarea:focus {
       outline: none;
-      border: 1px solid #00275e; }
+      border: 1px solid #141c4d; }
   .contactForm textarea {
     font-family: inherit; }
   .contactForm button {
