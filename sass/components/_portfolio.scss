@@ -5,13 +5,11 @@
                 flex-direction: column;
         }
         &__container {
-                border: 1px solid red;
-
+                // border: 1px solid red;
                 display: grid;
-                margin: 2rem;
-
+                margin: 2rem 2rem 2rem 4rem;
                 width: 95%;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+                grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
         }
 
         &__description {
@@ -19,12 +17,19 @@
         }
 
         &__image {
-                &--1 {
-                        background-image: url('../../img/toDo.PNG');
-
+                &--1,
+                &--2 {
                         width: 100%;
                         background-size: cover;
                         background-position: top left;
+                }
+
+                &--1 {
+                        background-image: url('../../img/toDo.PNG');
+                }
+
+                &--2 {
+                        background-image: url('../../img//Nookslibrary.PNG');
                 }
         }
 
@@ -35,7 +40,7 @@
                 align-items: stretch;
                 justify-content: center;
 
-                margin-top: 2rem;
+                margin: 1rem 2rem;
                 border: 1px solid rgba($black, 0.1);
                 transition: all 0.3s;
 

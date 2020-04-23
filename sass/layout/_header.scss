@@ -1,11 +1,19 @@
 .headerContainer {
-        width: 100%;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        padding-bottom: 1rem;
+        // border: 1px solid red;
         display: flex;
         align-items: center;
-        height: 3rem;
+        justify-content: flex-start;
+        // position: relative;
+        z-index: 5;
 
         @include respond-to('large') {
-                justify-content: space-evenly;
+                justify-content: flex-start;
                 align-items: flex-end;
                 height: auto;
                 flex-direction: row;

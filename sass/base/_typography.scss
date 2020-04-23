@@ -15,40 +15,59 @@
         font-size: 2rem;
         @include respond-to('large') {
                 font-size: 3rem;
+                margin-bottom: 5rem;
         }
 }
 
 .aboutHeading__primary,
 .contactHeading__primary {
         position: relative;
-        font-size: 5rem;
+
         text-align: center;
         margin: 0 auto;
         text-transform: uppercase;
         color: $dark-blue;
         z-index: 1;
-        &--orange {
-                color: $orange;
-        }
 
         &::before {
                 position: absolute;
-                font-size: 20rem;
                 color: rgba(255, 255, 255, 0.5);
-                top: -120%;
+                top: -170%;
+                font-size: 10rem;
                 left: 0%;
                 width: 100%;
                 z-index: -1;
                 padding: 0rem;
         }
+        @include respond-to('medium') {
+                font-size: 5rem;
+
+                &::before {
+                        top: -90%;
+                        font-size: 13rem;
+                }
+        }
+
+        @include respond-to('large') {
+                font-size: 7rem;
+
+                &::before {
+                        top: -90%;
+                        font-size: 20rem;
+                }
+        }
+
+        // &--orange {
+        //         color: $orange;
+        // }
 }
 
 .aboutHeading__primary::before {
-        content: 'ABOUT ME';
+        content: 'ABOUT';
 }
 
 .contactHeading__primary::before {
-        content: 'CONTACT ME';
+        content: 'CONTACT';
 }
 
 .label {

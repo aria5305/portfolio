@@ -1,56 +1,29 @@
 .hero {
         text-align: center;
-        margin: 0 auto;
+        margin: 70% auto 0 auto;
         padding: 0 2rem;
-        margin-top: 10rem;
+        height: 40vh;
         width: 100%;
         position: relative;
-        border: 1px solid $dark-blue;
+        // border: 1px solid $dark-blue;
 
         @include respond-to('medium') {
-                margin-top: 20rem;
-
-                border: none;
-                height: 50vh;
+                margin-top: 30rem;
         }
+        // }
         @include respond-to('large') {
-                margin-top: 10rem;
-                height: 35rem;
+                margin-top: 31.5%;
+                height: 50vh;
         }
 
         @include respond-to('huge') {
-                height: 40rem;
+                height: 60vh;
+                margin-top: 25.5%;
         }
 
         @include respond-to('ultra') {
-                height: 45rem;
-        }
-
-        &__image {
-                display: none;
-
-                @include respond-to('medium') {
-                        width: 50%;
-                        position: absolute;
-                        left: 2%;
-                        top: 50%;
-                        display: block;
-                        z-index: -1;
-                }
-
-                @include respond-to('large') {
-                        width: 55%;
-                        // left: 2%;
-                }
-
-                @include respond-to('huge') {
-                        top: 20%;
-                        width: 45%;
-                }
-
-                @include respond-to('ultra') {
-                        top: 13%;
-                }
+                height: 51.5vh;
+                margin-top: 15%;
         }
 }
 
@@ -72,6 +45,8 @@
                 // border: 1px solid red;
                 flex-direction: column;
                 justify-content: center;
+                position: relative;
+                z-index: 2;
                 align-items: center;
                 padding: 2rem 0rem;
                 margin-top: 2rem;
@@ -89,13 +64,14 @@
                 width: 70%;
         }
         &__intro {
-                text-align: left;
+                text-align: center;
                 @include respond-to('medium') {
                         width: 100%;
                         padding: 1rem;
                 }
                 @include respond-to('large') {
                         width: 40%;
+                        text-align: left;
                         padding: 2rem;
                 }
         }
@@ -146,7 +122,6 @@
                 border-left: 2rem solid transparent;
                 border-right: 2rem solid transparent;
                 border-top: 2rem solid #eee;
-                z-index: 2;
         }
 }
 .contactForm {
@@ -154,12 +129,13 @@
         background-color: white;
         width: 95%;
         margin: 2rem auto;
-        // border-radius: 2rem;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 2rem;
+        padding: 5rem 2rem 5rem 2rem;
         box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+        z-index: 2;
+        position: relative;
 
         @include respond-to('medium') {
                 width: 70%;
@@ -176,11 +152,12 @@
         @include respond-to('ultra') {
                 width: 30%;
         }
+
         & input,
         & textarea {
                 width: 100%;
                 padding: 1rem 0.5rem;
-                margin: 0.5rem 0rem;
+                margin: 1rem 0rem;
                 border: 1px solid rgba($black, 0.2);
                 box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
                 transition: border 0.3s ease-in;
@@ -195,7 +172,7 @@
                 font-family: inherit;
         }
 
-        & button {
-                margin: 1rem auto 0.5rem auto;
-        }
+        // & button {
+        //         margin: 1rem auto 0.5rem auto;
+        // }
 }

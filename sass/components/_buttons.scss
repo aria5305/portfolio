@@ -1,38 +1,38 @@
 .btn {
         border: 1px solid $orange;
-        color: rgba($white, 0.9);
-        background-color: $orange;
+        color: $white;
+        background-color: $white;
         padding: 1.5rem 2.5rem;
-        font-weight: 700;
-        margin-top: 3rem;
-        // border-radius: 1.5rem;
-
+        // font-weight: 700;
         transition: all 0.3s ease-in;
-
-        &:hover,
-        &:active {
-                background-color: $white;
-
-                color: $orange;
-        }
 
         &:focus {
                 outline: none;
         }
 
         &--blue {
-                border: 1px solid $light-blue;
+                // border: 1px solid $light-blue;
                 background-color: $light-blue;
-
+                margin: 2rem auto 0 auto;
+                cursor: pointer;
+                border: none;
                 &:hover,
                 &:active {
-                        color: $light-blue;
+                        transform: translate(0px, 3px);
                 }
         }
 
         &--hero {
                 text-decoration: none;
                 font-weight: 300;
+                color: $orange;
+                margin-top: 100rem;
+
+                &:hover,
+                &:active {
+                        background-color: $orange;
+                        color: $white;
+                }
         }
 }
 
