@@ -1,9 +1,9 @@
 .btn {
-        border: 1px solid $orange;
-        color: $white;
-        background-color: $white;
+        border: 1px solid var(--orange);
+        color: var(--white);
+        background-color: var(--whiteGrey2);
         padding: 1.5rem 2.5rem;
-        // font-weight: 700;
+
         transition: all 0.3s ease-in;
 
         &:focus {
@@ -12,7 +12,8 @@
 
         &--blue {
                 // border: 1px solid $light-blue;
-                background-color: $light-blue;
+                background-color: var(--light-blue);
+                color:var(--white);
                 margin: 2rem auto 0 auto;
                 cursor: pointer;
                 border: none;
@@ -25,12 +26,11 @@
         &--hero {
                 text-decoration: none;
                 font-weight: 300;
-                color: $orange;
-                margin-top: 100rem;
+                color: var(--orangeBTN);
 
                 &:hover,
                 &:active {
-                        background-color: $orange;
+                        background-color: var(--orange);
                         color: $white;
                 }
         }
@@ -38,15 +38,15 @@
 
 .link {
         &--portfolio {
-                color: $light-blue;
+                color: var(--light-blue);
                 font-weight: 300;
                 padding: 1rem 1.5rem;
-                border: 1px solid $light-blue;
+                border: 1px solid var(--light-blue);
                 text-decoration: none;
                 transition: all 0.3s ease-in-out;
 
                 &:hover {
-                        background-color: $light-blue;
+                        background-color: var(--light-blue);
                         color: $white;
                 }
 

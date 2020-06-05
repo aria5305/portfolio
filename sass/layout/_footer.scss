@@ -1,5 +1,5 @@
 footer {
-        background-color: $orange;
+        background-color: var(--orange);
         color: $light-gray;
         padding: 2rem 0 2rem 0;
         width: 100%;
@@ -21,6 +21,7 @@ footer {
         align-items: center;
 
         & a {
+                color: inherit;
                 margin: 0 1.5rem;
                 display: flex;
                 flex-direction: column;
@@ -33,9 +34,9 @@ footer {
                         color: inherit;
                 }
 
-                &:hover,
-                &:active {
-                        color: $dark-blue;
-                }
+                // &:hover,
+                // &:active {
+                //         // color: $dark-blue;
+                // }
         }
 }

@@ -15,12 +15,12 @@
         </head>
         <body>
                 <header class="headerContainer" id="top">
-                         <div class="logoContainer">
+                        <div class="logoContainer">
                                 <div class="Logo"></div>
                                 <p class="Logo__name">V.H.S Tubbs</p>
-                        </div> 
+                        </div>
 
-                         <div class="navigationContainer">
+                        <div class="navigationContainer">
                                 <div class="menuToggle">
                                         <input
                                                 class="menuToggle__checkbox"
@@ -31,9 +31,6 @@
                                         <span></span>
                                         <nav>
                                                 <ul class="navMenu">
-                                                   
-                                                    
-
                                                         <a
                                                                 href="#about"
                                                                 class="menuToggle__link"
@@ -60,19 +57,15 @@
                                                                 </li></a
                                                         >
 
-                                                        <a
-                                                                href="#"
-                                                                class="menuToggle__link"
-                                                                ><li>
-                                                                        Switch
-                                                                        to night
-                                                                        mode?
-                                                                </li></a
-                                                        >
+                                                        <li>
+                                                               
+                                                             <input type="checkbox" class="toggle">
+                                                              <label>Night mode</label>
+                                                        </li>
                                                 </ul>
-                                        </nav>     
+                                        </nav>
                                 </div>
-                        </div> 
+                        </div>
                 </header>
 
                 <main>
@@ -81,17 +74,29 @@
                                         Hello, my name is
                                         <span class="highlight--orange"
                                                 >Vivienne</span
-                                        >. 
+                                        >.
                                 </h1>
-                                <h2 class="secondaryHeading__hero">I am a self-taught
-                                        <span class="highlight--blue"
-                                                >Front end developer</span
-                                        >
-                                </h2>
 
-                                <a href="#portfolio" class="btn btn--hero">
-                                        See my work
-                                </a>
+                                <div class="typewriter">
+                                        <p class="typewriter__style">
+                                                I am
+                                                <span
+                                                        class="typewriter__text"
+                                                ></span
+                                                ><span class="cursor"
+                                                        >&nbsp;</span
+                                                >
+                                        </p>
+                                </div>
+
+                                <div class="linkContainer">
+                                        <a
+                                                href="#portfolio"
+                                                class="btn btn--hero"
+                                        >
+                                                See my work
+                                        </a>
+                                </div>
 
                                 <!-- <img src="img/hero.svg" alt="web development - hero image" class="hero__image"/> -->
                         </div>
@@ -103,36 +108,45 @@
 
                                 <div class="about__container">
                                         <div class="about__intro">
-                                                <img src="/img/hero.svg" alt="my photo" class="about__image">
-                                        <p class="paragraph">
-                                                I've started learning how to code
-                                                 after I realised I want to turn my passion into
-                                                a career, while working full time as a teacher!
+                                                <img
+                                                        src="/img/hero.svg"
+                                                        alt="my photo"
+                                                        class="about__image"
+                                                />
+                                                <p class="paragraph">
+                                                        I've started learning
+                                                        how to code after I
+                                                        realised I want to turn
+                                                        my passion into a
+                                                        career, while working
+                                                        full time as a teacher!
+                                                </p>
 
-                                        </p>
-
-                                        <p class="paragraph">
-                                                When I am not busy learning how to code, I enjoy gaming and watching movies! 
-                                                You would see quite a few of my projects that's relevant to my hobbies below in the portfolio sections. 
-
-                                        </p>
-                                </div>
-                               
+                                                <p class="paragraph">
+                                                        When I am not busy
+                                                        learning how to code, I
+                                                        enjoy gaming and
+                                                        watching movies! You
+                                                        would see quite a few of
+                                                        my projects that's
+                                                        relevant to my hobbies
+                                                        below in the portfolio
+                                                        sections.
+                                                </p>
+                                        </div>
 
                                         <div class="about__skills">
                                                 <div>
                                                         <i
                                                                 class="fab fa-html5"
                                                         ></i>
-                                                        <p
-                                                                class="tag"
-                                                        >
+                                                        <p class="tag">
                                                                 HTML
                                                         </p>
                                                         <p
                                                                 class="paragraph paragraph--small"
                                                         >
-                                                                Making
+                                                               
                                                                 Responsive,
                                                                 mobile first
                                                                 websites
@@ -142,9 +156,7 @@
                                                         <i
                                                                 class="fab fa-css3-alt"
                                                         ></i>
-                                                        <p
-                                                        class="tag"
-                                                        >
+                                                        <p class="tag">
                                                                 CSS
                                                         </p>
                                                         <p
@@ -157,9 +169,7 @@
                                                         <i
                                                                 class="fab fa-js"
                                                         ></i>
-                                                        <p
-                                                        class="tag"
-                                                        >
+                                                        <p class="tag">
                                                                 Javascript
                                                         </p>
                                                         <p
@@ -173,9 +183,7 @@
                                                         <i
                                                                 class="fab fa-react"
                                                         ></i>
-                                                        <p
-                                                        class="tag"
-                                                        >
+                                                        <p class="tag">
                                                                 React
                                                         </p>
                                                         <p
@@ -190,9 +198,7 @@
                                                         <i
                                                                 class="fab fa-sass"
                                                         ></i>
-                                                        <p
-                                                        class="tag"
-                                                        >
+                                                        <p class="tag">
                                                                 Sass
                                                         </p>
                                                         <p
@@ -208,9 +214,7 @@
                                                         <i
                                                                 class="fab fa-git-alt"
                                                         ></i>
-                                                        <p
-                                                        class="tag"
-                                                        >
+                                                        <p class="tag">
                                                                 Git
                                                         </p>
                                                         <p
@@ -226,37 +230,203 @@
                         </section>
 
                         <section class="portfolio" id="portfolio">
-                                <h1
-                                        class="heading__primary heading__primary--orange"
-                                >
+                                <h1 class="portfolioHeading__primary">
                                         My work
                                 </h1>
 
                                 <div class="portfolio__container">
                                         <div class="portfolio__item">
-                                                <div class="portfolio__image--1"></div>
-                                                <div class="portfolio__description">
-                                                <a class="link--portfolio" href="https://aria-todo.netlify.com/">To do list</a>
-                                                <p class="paragraph--description">
-                                                        Made with Vanilla Javascript, can create/manage different project list </p>
-                                                        
+                                                <div
+                                                        class="portfolio__image--2"
+                                                ></div>
+                                                <div
+                                                        class="portfolio__description"
+                                                >
+                                                        <a
+                                                                class="portfolio__folder"
+                                                                href="https://github.com/aria5305/Backup-code-ACNH"
+                                                        >
+                                                                <i
+                                                                        class="fab fa-github"
+                                                                ></i>
+                                                        </a>
+
+                                                        <a
+                                                                class="links"
+                                                                href="https://nookslibrary.netlify.com/"
+                                                                ><h3>
+                                                                        Nook's
+                                                                        library
+                                                                </h3></a
+                                                        >
+
+                                                        <!-- <a class="link--portfolio" href="https://nookslibrary.netlify.com/">Nook's Library</a> -->
+                                                        <p
+                                                                class="paragraph--Leftdescription"
+                                                        >
+                                                                A hobby project
+                                                                for Animal
+                                                                Crossing New
+                                                                Horizon
+                                                        </p>
+
+                                                        <p class="tag--small">
+                                                                React
+                                                        </p>
                                                 </div>
                                         </div>
-
 
                                         <div class="portfolio__item">
-                                                <div class="portfolio__image--2"></div>
-                                                <div class="portfolio__description">
-                                                <a class="link--portfolio" href="https://nookslibrary.netlify.com/">Nook's Library</a>
-                                                <p class="paragraph--description">
-                                                        Made with React, a hobby project for Animal Crossing New Horizon </p>
-                                                        
+                                                <div
+                                                        class="portfolio__image--3"
+                                                ></div>
+                                                <div
+                                                        class="portfolio__description"
+                                                >
+                                                        <a
+                                                                class="portfolio__folder"
+                                                                href="https://github.com/aria5305/expense-track"
+                                                        >
+                                                                <i
+                                                                        class="fab fa-github"
+                                                                ></i>
+                                                        </a>
+
+                                                        <a
+                                                                class="links"
+                                                                href="https://nookslibrary.netlify.com/"
+                                                                ><h3>
+                                                                        Expense
+                                                                        Track
+                                                                </h3></a
+                                                        >
+
+                                                        <!-- <a class="link--portfolio" href="https://nookslibrary.netlify.com/">Nook's Library</a> -->
+                                                        <p
+                                                                class="paragraph--Leftdescription"
+                                                        >
+                                                                Using Project
+                                                                used to track
+                                                                your spending
+                                                                habits. Firebase
+                                                                for user
+                                                                management and
+                                                                DB.
+                                                        </p>
+
+                                                        <div class="tag__group">
+                                                                <p
+                                                                        class="tag--small"
+                                                                >
+                                                                        React
+                                                                </p>
+                                                                <p
+                                                                        class="tag--small"
+                                                                >
+                                                                        Redux
+                                                                </p>
+                                                                <p
+                                                                        class="tag--small"
+                                                                >
+                                                                        Firebase
+                                                                </p>
+                                                        </div>
                                                 </div>
                                         </div>
-                                        <div>3</div>
-                                        <div>4</div>
-                                        <div>5</div>
-                                        <div>6</div>
+
+                                        <div class="portfolio__item">
+                                                <div
+                                                        class="portfolio__image--3"
+                                                ></div>
+                                                <div
+                                                        class="portfolio__description"
+                                                >
+                                                        <a
+                                                                class="portfolio__folder"
+                                                                href="https://github.com/aria5305/expense-track"
+                                                        >
+                                                                <i
+                                                                        class="fab fa-github"
+                                                                ></i>
+                                                        </a>
+
+                                                        <a
+                                                                class="links"
+                                                                href="https://nookslibrary.netlify.com/"
+                                                                ><h3>
+                                                                        Shopping
+                                                                        - ASSO
+                                                                </h3></a
+                                                        >
+
+                                                        <!-- <a class="link--portfolio" href="https://nookslibrary.netlify.com/">Nook's Library</a> -->
+                                                        <p
+                                                                class="paragraph--Leftdescription"
+                                                        >
+                                                                Simple Shopping
+                                                                cart site -
+                                                                multiple page
+                                                                application
+                                                        </p>
+
+                                                        <div class="tag__group">
+                                                                <p
+                                                                        class="tag--small"
+                                                                >
+                                                                        React
+                                                                </p>
+                                                                <p
+                                                                        class="tag--small"
+                                                                >
+                                                                        Redux
+                                                                </p>
+                                                                <p
+                                                                        class="tag--small"
+                                                                >
+                                                                        Firebase
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="portfolio__item">
+                                                <div
+                                                        class="portfolio__image--1"
+                                                ></div>
+
+                                                <div
+                                                        class="portfolio__description"
+                                                >
+                                                        <a
+                                                                class="portfolio__folder"
+                                                                href="https://github.com/aria5305/TodoList"
+                                                        >
+                                                                <i
+                                                                        class="fab fa-github"
+                                                                ></i>
+                                                        </a>
+
+                                                        <a
+                                                                class="links"
+                                                                href="https://aria-todo.netlify.com/"
+                                                                ><h3>
+                                                                        TODO
+                                                                        list
+                                                                </h3></a
+                                                        >
+                                                        <p
+                                                                class="paragraph--Leftdescription"
+                                                        >
+                                                                To do list with
+                                                                different
+                                                                project lists
+                                                        </p>
+
+                                                        <p class="tag--small">
+                                                                Javascript
+                                                        </p>
+                                                </div>
+                                        </div>
                                 </div>
                         </section>
 
@@ -265,9 +435,11 @@
                                         Contact me
                                 </h1>
 
-                             
-
-                                <form class="contactForm">
+                                <form
+                                        class="contactForm"
+                                        data-netlify="true"
+                                        method="POST"
+                                >
                                         <label class="label">Name</label>
                                         <input
                                                 type="text"
@@ -301,13 +473,35 @@
                 <footer id="footer">
                         <div class="footerContainer">
                                 <ul class="footerLinks">
-                                        
-                                        <li><a href="#""><i class="fas fa-envelope"></i>Email me</a></li>
-                                        <li><a href="#""><i class="fab fa-github"></i>My Github</a></li>
-                                        <li><a href="#""><i class="fas fa-file-download"></i>My Resume</a></li>
-                               
+                                        <li>
+                                                <a
+                                                        href="mailto: tubbsv2@google.com"
+                                                        ><i
+                                                                class="fas fa-envelope"
+                                                        ></i
+                                                        >Email me</a
+                                                >
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://github.com/aria5305"
+                                                        ><i
+                                                                class="fab fa-github"
+                                                        ></i
+                                                        >My Github</a
+                                                >
+                                        </li>
+                                        <li>
+                                                <a href=""
+                                                        ><i
+                                                                class="fas fa-file-download"
+                                                        ></i
+                                                        >My Resume</a
+                                                >
+                                        </li>
                                 </ul>
                         </div>
                 </footer>
+                <script src="function.js"></script>
         </body>
 </html>

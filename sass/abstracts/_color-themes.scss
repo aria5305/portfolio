@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap');
+// https://dev.to/kaioalmeidacost/easy-dark-mode-with-sass-30n8
+html {
+  background: var(--white);
+
+  --dark-blue: #141c4d;
+  --orange:#fcc224;
+   --orangeBTN:#fcc224;
+  --light-blue:#31c3e7;
+  --light-gray:#6b8fa8;
+  --black:#000;
+  --white:#fff;
+  --lightBg: #eee;
+ --whiteGrey:#fff;
+  --whiteGrey2:#fff;
+  --heading-light:rgba(0, 0, 0, 0.03);
+}
+
+html[data-theme='dark'] {
+   background: var(--white);
+   --dark-blue:#ddd;
+   --heading-light:rgba(255, 255, 255, 0.09);
+   --orange:#495057;
+
+    --orangeBTN:#fff;
+    
+    --light-blue:#1a535c;
+   --light-gray:#999;
+   --black:#fff;
+   --white:#000;
+  --lightBg: #000;
+  --whiteGrey:#212121;
+   --whiteGrey2:#424242;
+}
+
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms!important;
+  transition-delay: 0!important;
+}
+
+
+// // dark theme
+
+
+
+// $colors-dark: (
+//   "dark-blue":#8ab4f8;
+// // "$orange": #fcc224;
+// // "$light-blue": #31c3e7;
+// // "$light-gray": #6b8fa8;
+// // "$white": #fff;
+// // "$black": #000;
+// );
+
+// $theme-dark: (
+//  "primaryDark":          map-get($colors-dark, "dark-blue")
+// //   "PrimaryLight":      map-get($colors-dark, "orange"),
+// //   "PrimaryLight-2": map-get($colors-dark, "light-blue"),
+// //   "PrimaryLight-3":        map-get($colors-dark, "light-gray"),
+// //   "muted":             map-get($colors-dark, "white"),
+// //   "subtle":            map-get($colors-dark, "black")
+// );
+
+// // light theme
+
+// $colors-light: (
+
+// "dark-blue": #141c4d;
+// "$orange": #fcc224;
+// "$light-blue": #31c3e7;
+// "$light-gray": #6b8fa8;
+// "$white": #fff;
+// "$black": #000;
+// //   "forest":   #239f28,
+// //   "aqua":     #186eef,
+// //   "ruby":     #c93939,
+// //   "zing":     #20cac3,
+// //   "carrot":   #e9853e,
+// //   "grape":    #7542f2,
+// //   "midnight": #433f5c,
+// //   "slate":    #657786
+// );
+
+
+// $theme-light: (
+//   "primaryDark":          map-get($colors-light, "dark-blue"),
+//   "PrimaryLight":      map-get($colors-light, "orange"),
+//   "PrimaryLight-2": map-get($colors-light, "light-blue"),
+//   "PrimaryLight-3":        map-get($colors-light, "light-gray"),
+//   "muted":             map-get($colors-light, "white"),
+//   "subtle":            map-get($colors-light, "black")
+// );
+// // app
+
+// .app.light {
+//   // define a css variable for each shade
+  
+
+//   // define a css variable for each color
+//   @each $name, $color in $colors-light {
+//     --#{$name}: #{$color};
+//   }
+
+//   // define a css variable for each theme color
+//   @each $name, $color in $theme-light {
+//     --#{$name}: #{$color};
+//   }
+  
+//   $primary: map-get($colors-light, "primaryDark");
+//   --primary: #{$primary};
+  
+// }
+
+// .app.dark {
+
+
+//   // define a css variable for each color
+//   @each $name, $color in $colors-dark {
+//     --#{$name}: #{$color};
+//   }
+
+//   // define a css variable for each theme color
+//   @each $name, $color in $theme-dark {
+//     --#{$name}: #{$color};
+//   }
+
+  
+//   $primary: map-get($colors-dark, "primaryDark");
+//   --primary: #{$primary};
+// //   --primary-dark: #{darken($primary, 10%)};
+// //   --primary-darker: #{darken($primary, 20%)};
+// }
+
+
+// .darkBlue{
+//     color:var(--primary);
+// }
+
+// // .app {
+// //   background: var(--bg-color);
+// //   color: var(--text-color);
+// //   margin: auto;
+// //   max-width: 720px;
+// //   padding: 2rem;
+// // }
+
+// // .primary {
+// //   color: var(--primary);
+// // }
+
+
+// // .primary-dark {
+// //   color: var(--primary-dark);
+// // }
+
+// // .primary-darker {
+// //   color: var(--primary-darker);
+// // }
+
+// // .current-theme {
+// //   color: var(--subtle);
+
+// //   .theme-name {
+// //     color: var(--forest);
+// //   }
+// // }
+
+// // .btn {
+// //   background: var(--bg-color);
+// //   border: 2px solid var(--border-color);
+// //   color: var(--text-color);
+// //   padding: 1rem;
+
+// //   &:focus {
+// //     border-color: var(--border-dark-color);
+// //     outline: 1px solid var(--muted);
+// //   }
+// // }

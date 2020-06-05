@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+
+// https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995
+
 *,
 *::after,
 *::before {
@@ -21,3 +24,5 @@ body {
         overflow-x: hidden;
         max-width: 100%;
 }
+
+
