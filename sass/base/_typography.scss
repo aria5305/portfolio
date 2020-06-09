@@ -1,6 +1,6 @@
 .primaryHeading__hero {
         margin-top: 3rem;
-        color:var(--black);
+        color: var(--black);
         font-size: 3.5rem;
         text-align: center;
         margin-bottom: 3rem;
@@ -12,10 +12,10 @@
 }
 
 .secondaryHeading__hero {
-         color:var(--black);
+        color: var(--black);
         margin-bottom: 3rem;
         font-size: 2rem;
-        
+
         @include respond-to('large') {
                 font-size: 3rem;
                 margin-bottom: 5rem;
@@ -60,23 +60,21 @@
                         font-size: 20rem;
                 }
         }
-
-      
 }
 
 .portfolioHeading__primary::before {
         content: 'WORK';
-        color: var(--heading-light)
+        color: var(--heading-light);
 }
 
 .aboutHeading__primary::before {
         content: 'ABOUT';
-                color: var(--heading-light)
+        color: var(--heading-light);
 }
 
 .contactHeading__primary::before {
         content: 'CONTACT';
-                color: var(--heading-light)
+        color: var(--heading-light);
 }
 
 .label {
@@ -155,6 +153,6 @@
 }
 .links {
         text-decoration: none;
-        color: $light-blue;
+        color: var(--light-blue);
         font-size: 1.7rem;
 }

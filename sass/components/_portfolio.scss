@@ -12,7 +12,7 @@
                 text-align: center;
                 width: 100%;
                 grid-gap: 1rem;
-                background-color:var(--whiteGrey);
+                background-color: var(--whiteGrey);
 
                 @include respond-to('small') {
                         grid-template-columns: repeat(1, 1fr);
@@ -44,8 +44,7 @@
 
         &__folder {
                 position: relative;
-                top: 0rem;
-                left: 80%;
+                margin-right: 10rem;
                 display: inline-block;
                 z-index: 3;
 
@@ -70,8 +69,9 @@
 
                 i::after {
                         opacity: 0;
+                        font: inherit;
                         content: 'Link to github Folder';
-                        background-color: $orange;
+                        background-color: var(--orange);
                         border-radius: 1rem;
                         color: rgba(255, 255, 255, 0.7);
                         font-size: 1rem;
@@ -79,7 +79,7 @@
                         width: 10rem;
                         padding: 0.2rem;
                         // border: 1px solid red;
-                        top: -10%;
+                        top: -20%;
                         left: -150%;
                 }
 
@@ -108,7 +108,6 @@
         }
 
         &__item {
-                // background-color: #eee;
                 border-radius: 1.5rem;
                 display: flex;
                 align-items: stretch;

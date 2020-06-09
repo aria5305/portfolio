@@ -168,13 +168,14 @@
                 width: 100%;
                 padding: 1rem 0.5rem;
                 margin: 1rem 0rem;
+                background-color: var(--white);
                 border: 1px solid rgba($black, 0.2);
                 box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
                 transition: border 0.3s ease-in;
 
                 &:focus {
                         outline: none;
-                        border: 1px solid $dark-blue;
+                        border: 1px solid var(--dark-blue);
                 }
         }
 
@@ -193,7 +194,7 @@
 }
 .typewriter__style {
         font-size: 2rem;
-        color:var(--black);
+        color: var(--black);
 }
 .typewriter__text {
         font-weight: bold;

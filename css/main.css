@@ -17,30 +17,30 @@ footer i {
 html {
   background: var(--white);
   --dark-blue: #141c4d;
-  --orange:#fcc224;
-  --orangeBTN:#fcc224;
-  --light-blue:#31c3e7;
-  --light-gray:#6b8fa8;
-  --black:#000;
-  --white:#fff;
+  --orange: #fcc224;
+  --orangeBTN: #fcc224;
+  --light-blue: #31c3e7;
+  --light-gray: #6b8fa8;
+  --black: #000;
+  --white: #fff;
   --lightBg: #eee;
-  --whiteGrey:#fff;
-  --whiteGrey2:#fff;
-  --heading-light:rgba(0, 0, 0, 0.03); }
+  --whiteGrey: #fff;
+  --whiteGrey2: #fff;
+  --heading-light: rgba(0, 0, 0, 0.03); }
 
 html[data-theme='dark'] {
   background: var(--white);
-  --dark-blue:#ddd;
-  --heading-light:rgba(255, 255, 255, 0.09);
-  --orange:#495057;
-  --orangeBTN:#fff;
-  --light-blue:#1a535c;
-  --light-gray:#999;
-  --black:#fff;
-  --white:#000;
+  --dark-blue: #ddd;
+  --heading-light: rgba(255, 255, 255, 0.09);
+  --orange: #433f5c;
+  --orangeBTN: #fff;
+  --light-blue: #6b8fa8;
+  --light-gray: #999;
+  --black: #fff;
+  --white: #000;
   --lightBg: #000;
-  --whiteGrey:#212121;
-  --whiteGrey2:#424242; }
+  --whiteGrey: #212121;
+  --whiteGrey2: #424242; }
 
 html.transition,
 html.transition *,
@@ -195,7 +195,7 @@ body {
 
 .links {
   text-decoration: none;
-  color: #31c3e7;
+  color: var(--light-blue);
   font-size: 1.7rem; }
 
 .btn {
@@ -295,8 +295,7 @@ body {
     position: relative; }
   .portfolio__folder {
     position: relative;
-    top: 0rem;
-    left: 80%;
+    margin-right: 10rem;
     display: inline-block;
     z-index: 3;
     padding: 0.8rem;
@@ -308,15 +307,16 @@ body {
       transition: all 0.3s; }
     .portfolio__folder i::after {
       opacity: 0;
+      font: inherit;
       content: 'Link to github Folder';
-      background-color: #fcc224;
+      background-color: var(--orange);
       border-radius: 1rem;
       color: rgba(255, 255, 255, 0.7);
       font-size: 1rem;
       position: absolute;
       width: 10rem;
       padding: 0.2rem;
-      top: -10%;
+      top: -20%;
       left: -150%; }
     @media (min-width: 600px) {
       .portfolio__folder {
@@ -361,41 +361,41 @@ body {
   .tag__group p {
     margin-right: 1rem; }
 
-ul li input[type="checkbox"] {
+ul li input[type='checkbox'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer; }
 
-ul li input[type="checkbox"]:focus {
+ul li input[type='checkbox']:focus {
   outline: 0; }
 
 .toggle {
-  height: 32px;
-  width: 52px;
+  height: 22px;
+  width: 42px;
   border-radius: 16px;
   display: inline-block;
   position: relative;
-  margin-right: .3rem;
-  border: 2px solid #474755;
-  background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
+  margin-right: 0.3rem;
+  border: 2px solid var(--orange);
+  background: var(--orange);
   transition: all 0.2s ease; }
 
 .toggle:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: white;
   box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
   transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35); }
 
 .toggle:checked {
-  border-color: #31c3e7; }
+  background-color: black; }
 
 .toggle:checked:after {
   transform: translatex(20px); }
@@ -703,13 +703,14 @@ footer {
     width: 100%;
     padding: 1rem 0.5rem;
     margin: 1rem 0rem;
+    background-color: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.08);
     transition: border 0.3s ease-in; }
     .contactForm input:focus,
     .contactForm textarea:focus {
       outline: none;
-      border: 1px solid #141c4d; }
+      border: 1px solid var(--dark-blue); }
   .contactForm textarea {
     font-family: inherit; }
 

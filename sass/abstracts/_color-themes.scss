@@ -1,57 +1,54 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap');
 // https://dev.to/kaioalmeidacost/easy-dark-mode-with-sass-30n8
 html {
-  background: var(--white);
+        background: var(--white);
 
-  --dark-blue: #141c4d;
-  --orange:#fcc224;
-   --orangeBTN:#fcc224;
-  --light-blue:#31c3e7;
-  --light-gray:#6b8fa8;
-  --black:#000;
-  --white:#fff;
-  --lightBg: #eee;
- --whiteGrey:#fff;
-  --whiteGrey2:#fff;
-  --heading-light:rgba(0, 0, 0, 0.03);
+        --dark-blue: #141c4d;
+        --orange: #fcc224;
+        --orangeBTN: #fcc224;
+        --light-blue: #31c3e7;
+        --light-gray: #6b8fa8;
+        --black: #000;
+        --white: #fff;
+        --lightBg: #eee;
+        --whiteGrey: #fff;
+        --whiteGrey2: #fff;
+        --heading-light: rgba(0, 0, 0, 0.03);
 }
 
 html[data-theme='dark'] {
-   background: var(--white);
-   --dark-blue:#ddd;
-   --heading-light:rgba(255, 255, 255, 0.09);
-   --orange:#495057;
+        background: var(--white);
+        --dark-blue: #ddd;
+        --heading-light: rgba(255, 255, 255, 0.09);
+        --orange: #433f5c;
 
-    --orangeBTN:#fff;
-    
-    --light-blue:#1a535c;
-   --light-gray:#999;
-   --black:#fff;
-   --white:#000;
-  --lightBg: #000;
-  --whiteGrey:#212121;
-   --whiteGrey2:#424242;
+        --orangeBTN: #fff;
+
+        --light-blue: #6b8fa8;
+
+        --light-gray: #999;
+        --black: #fff;
+        --white: #000;
+        --lightBg: #000;
+        --whiteGrey: #212121;
+        --whiteGrey2: #424242;
 }
-
 
 html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms!important;
-  transition-delay: 0!important;
+        transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms !important;
+        transition-delay: 0 !important;
 }
 
-
 // // dark theme
-
-
 
 // $colors-dark: (
 //   "dark-blue":#8ab4f8;
 // // "$orange": #fcc224;
 // // "$light-blue": #31c3e7;
-// // "$light-gray": #6b8fa8;
+// // "$light-gray": ;
 // // "$white": #fff;
 // // "$black": #000;
 // );
@@ -81,10 +78,9 @@ html.transition *:after {
 // //   "zing":     #20cac3,
 // //   "carrot":   #e9853e,
 // //   "grape":    #7542f2,
-// //   "midnight": #433f5c,
-// //   "slate":    #657786
+// //   "midnight":
+// //   "slate":
 // );
-
 
 // $theme-light: (
 //   "primaryDark":          map-get($colors-light, "dark-blue"),
@@ -98,7 +94,6 @@ html.transition *:after {
 
 // .app.light {
 //   // define a css variable for each shade
-  
 
 //   // define a css variable for each color
 //   @each $name, $color in $colors-light {
@@ -109,14 +104,13 @@ html.transition *:after {
 //   @each $name, $color in $theme-light {
 //     --#{$name}: #{$color};
 //   }
-  
+
 //   $primary: map-get($colors-light, "primaryDark");
 //   --primary: #{$primary};
-  
+
 // }
 
 // .app.dark {
-
 
 //   // define a css variable for each color
 //   @each $name, $color in $colors-dark {
@@ -128,13 +122,11 @@ html.transition *:after {
 //     --#{$name}: #{$color};
 //   }
 
-  
 //   $primary: map-get($colors-dark, "primaryDark");
 //   --primary: #{$primary};
 // //   --primary-dark: #{darken($primary, 10%)};
 // //   --primary-darker: #{darken($primary, 20%)};
 // }
-
 
 // .darkBlue{
 //     color:var(--primary);
@@ -151,7 +143,6 @@ html.transition *:after {
 // // .primary {
 // //   color: var(--primary);
 // // }
-
 
 // // .primary-dark {
 // //   color: var(--primary-dark);
