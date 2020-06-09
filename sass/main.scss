@@ -1,12 +1,14 @@
 @import 'abstracts/variables'; 
 @import 'abstracts/mixins'; 
 @import 'abstracts/fontAwesome'; 
+@import 'abstracts/color-themes'; 
 
 @import 'base/base';
 @import 'base/typography';
 @import 'components/buttons';
 @import 'components/logo';
 @import 'components/portfolio';
+@import 'components/slider';
 
 @import 'layout/footer';
 @import 'layout/header';

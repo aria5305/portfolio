@@ -1,6 +1,7 @@
 {
   "name": "portfolio2",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "dependencies": {
     "node-sass": "^4.13.1"
@@ -13,6 +14,5 @@
     "start": "npm-run-all --parallel live scss"
   },
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "ISC"
 }

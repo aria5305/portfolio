@@ -3,46 +3,151 @@
 
         @include respond-to('medium') {
                 flex-direction: column;
-        }
-        &__container {
-                border: 1px solid red;
-
-                display: grid;
-                margin: 2rem;
-
-                width: 95%;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-        }
-
-        &__description {
                 margin-top: 2rem;
         }
 
-        &__image {
-                &--1 {
-                        background-image: url('../../img/toDo.PNG');
+        &__container {
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                grid-gap: 1rem;
+                background-color: var(--whiteGrey);
 
+                @include respond-to('small') {
+                        grid-template-columns: repeat(1, 1fr);
+                        padding: 2rem;
+                }
+                @include respond-to('medium') {
+                        grid-template-columns: repeat(2, 1fr);
+                        padding: 2rem 1rem;
+                }
+
+                @include respond-to('huge') {
+                        grid-template-columns: repeat(
+                                auto-fit,
+                                minmax(300px, 390px)
+                        );
+                }
+        }
+
+        &__description {
+                border-left: 1px solid rgba(0, 0, 0, 0.25);
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 1rem;
+                position: relative;
+        }
+
+        &__folder {
+                position: relative;
+                margin-right: 10rem;
+                display: inline-block;
+                z-index: 3;
+
+                padding: 0.8rem;
+                cursor: pointer;
+
+                & i {
+                        transition: all 0.3s;
+                }
+
+                // &:hover i {
+                //         color: $orange;
+
+                //         // position: relative;
+                // }
+
+                &:hover i::after {
+                        opacity: 1;
+                        transition: all 0.3s;
+                        // cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                }
+
+                i::after {
+                        opacity: 0;
+                        font: inherit;
+                        content: 'Link to github Folder';
+                        background-color: var(--orange);
+                        border-radius: 1rem;
+                        color: rgba(255, 255, 255, 0.7);
+                        font-size: 1rem;
+                        position: absolute;
+                        width: 10rem;
+                        padding: 0.2rem;
+                        // border: 1px solid red;
+                        top: -20%;
+                        left: -150%;
+                }
+
+                @include respond-to('medium') {
+                        left: 78%;
+                }
+        }
+
+        &__image {
+                &--1,
+                &--2 {
+                        border-top-left-radius: 1.5rem;
+                        border-bottom-left-radius: 1.5rem;
                         width: 100%;
                         background-size: cover;
                         background-position: top left;
                 }
+
+                &--1 {
+                        background-image: url('../../img/toDo.PNG');
+                }
+
+                &--2 {
+                        background-image: url('../../img//Nookslibrary.PNG');
+                }
         }
 
         &__item {
-                // background-color: #eee;
-                // border-radius: 1.5rem;
+                border-radius: 1.5rem;
                 display: flex;
                 align-items: stretch;
+                height: 20rem;
                 justify-content: center;
+                background-color: var(--whiteGrey2);
+                z-index: 2;
 
-                margin-top: 2rem;
                 border: 1px solid rgba($black, 0.1);
+
                 transition: all 0.3s;
 
                 &:hover {
-                        cursor: pointer;
                         transform: translateY(-2px);
                         box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.75);
+                }
+
+                @include respond-to('small') {
+                        margin-top: 2rem;
+                }
+
+                @include respond-to('medium') {
+                        margin: 0.5rem;
+                }
+
+                @include respond-to('large') {
+                        margin: 1rem 2rem;
+                }
+        }
+}
+
+.tag {
+        &__group {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                // justify-content: space-between;
+
+                & p {
+                        margin-right: 1rem;
                 }
         }
 }

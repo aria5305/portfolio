@@ -1,23 +1,18 @@
-// @import "../scss/fontawesome.scss";
-// @import "../scss/solid.scss";
 
-// .user{
-//     @extend %fa-icon;
-//     @extend .fas;
-//     &::before{
-//         content:fa-content($fa-var-user);
-//     }
-// }
 
 .about__skills i {
         display: inline-block;
         // width:2rem;
         font-size: 5rem;
-        color: $light-blue;
+        color: var(--light-blue);
 }
 
+.portfolio i {
+        color: var(--dark-blue);
+        font-size: 2.5rem;
+}
 footer i {
-        color: $white;
+        color: #fff;
         font-size: 2rem;
         margin: 1.5rem;
 }

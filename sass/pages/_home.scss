@@ -1,65 +1,45 @@
 .hero {
         text-align: center;
-        margin: 0 auto;
+        margin: 70% auto 0 auto;
+        // borde
         padding: 0 2rem;
-        margin-top: 10rem;
+        height: 40vh;
         width: 100%;
         position: relative;
-        border: 1px solid $dark-blue;
+        // border: 1px solid $dark-blue;
 
-        @include respond-to('medium') {
-                margin-top: 20rem;
-
-                border: none;
-                height: 50vh;
+        @include respond-to('small') {
+                margin-top: 40%;
         }
+        @include respond-to('medium') {
+                margin-top: 50%;
+        }
+        // }
         @include respond-to('large') {
-                margin-top: 10rem;
-                height: 35rem;
+                margin-top: 40vh;
+                height: 50vh;
         }
 
         @include respond-to('huge') {
-                height: 40rem;
+                height: 60vh;
+                margin-top: 30vh;
         }
 
         @include respond-to('ultra') {
-                height: 45rem;
-        }
-
-        &__image {
-                display: none;
-
-                @include respond-to('medium') {
-                        width: 50%;
-                        position: absolute;
-                        left: 2%;
-                        top: 50%;
-                        display: block;
-                        z-index: -1;
-                }
-
-                @include respond-to('large') {
-                        width: 55%;
-                        // left: 2%;
-                }
-
-                @include respond-to('huge') {
-                        top: 20%;
-                        width: 45%;
-                }
-
-                @include respond-to('ultra') {
-                        top: 13%;
-                }
+                height: 51.5vh;
+                margin-top: 15%;
         }
 }
 
+.linkContainer {
+        margin-top: 4rem;
+}
 .about {
         margin-top: 13.5rem;
         padding: 2rem 0rem 5rem 0rem;
         width: 100%;
         height: auto;
-        background-color: #eee;
+        background-color: var(--lightBg);
         position: relative;
 
         @include respond-to('large') {
@@ -72,11 +52,13 @@
                 // border: 1px solid red;
                 flex-direction: column;
                 justify-content: center;
+                position: relative;
+                z-index: 2;
                 align-items: center;
                 padding: 2rem 0rem;
                 margin-top: 2rem;
                 text-align: center;
-                background-color: $white;
+                background-color: var(--whiteGrey);
 
                 @include respond-to('large') {
                         flex-direction: row;
@@ -89,13 +71,17 @@
                 width: 70%;
         }
         &__intro {
-                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 @include respond-to('medium') {
                         width: 100%;
                         padding: 1rem;
                 }
                 @include respond-to('large') {
                         width: 40%;
+                        text-align: left;
                         padding: 2rem;
                 }
         }
@@ -126,7 +112,7 @@
 }
 
 .contactMe {
-        background-color: #eee;
+        background-color: var(--lightBg);
         padding: 2rem 0rem;
         margin: 0 auto;
         text-align: center;
@@ -140,26 +126,26 @@
         &::after {
                 content: '';
                 position: absolute;
-                bottom: -4%;
+                bottom: -3.2%;
                 left: 50%;
                 margin-left: -2rem;
                 border-left: 2rem solid transparent;
                 border-right: 2rem solid transparent;
-                border-top: 2rem solid #eee;
-                z-index: 2;
+                border-top: 2rem solid var(--lightBg);
         }
 }
 .contactForm {
         display: flex;
-        background-color: white;
+        background-color: var(--whiteGrey);
         width: 95%;
         margin: 2rem auto;
-        // border-radius: 2rem;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 2rem;
+        padding: 5rem 2rem 5rem 2rem;
         box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+        z-index: 2;
+        position: relative;
 
         @include respond-to('medium') {
                 width: 70%;
@@ -176,18 +162,20 @@
         @include respond-to('ultra') {
                 width: 30%;
         }
+
         & input,
         & textarea {
                 width: 100%;
                 padding: 1rem 0.5rem;
-                margin: 0.5rem 0rem;
+                margin: 1rem 0rem;
+                background-color: var(--white);
                 border: 1px solid rgba($black, 0.2);
                 box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
                 transition: border 0.3s ease-in;
 
                 &:focus {
                         outline: none;
-                        border: 1px solid $dark-blue;
+                        border: 1px solid var(--dark-blue);
                 }
         }
 
@@ -195,7 +183,48 @@
                 font-family: inherit;
         }
 
-        & button {
-                margin: 1rem auto 0.5rem auto;
+        // & button {
+        //         margin: 1rem auto 0.5rem auto;
+        // }
+}
+
+.typewriter {
+        width: 100%;
+        text-align: center;
+}
+.typewriter__style {
+        font-size: 2rem;
+        color: var(--black);
+}
+.typewriter__text {
+        font-weight: bold;
+        color: var(--light-blue);
+}
+.typewriter p span.cursor {
+        display: inline-block;
+        background-color: var(--black);
+        margin-left: 0.1rem;
+        width: 2px;
+        animation: typing 1s infinite;
+}
+.typewriter p span.cursor.typing {
+        animation: none;
+}
+
+@keyframes typing {
+        0% {
+                background-color: var(--black);
+        }
+        49% {
+                background-color: var(--black);
+        }
+        50% {
+                background-color: transparent;
+        }
+        99% {
+                background-color: transparent;
+        }
+        100% {
+                background-color: var(--black);
         }
 }
