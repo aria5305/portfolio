@@ -191,6 +191,7 @@ body {
 @media (min-width: 900px) {
   .tag--small {
     width: 55%;
+    padding: 0 0.3rem;
     font-size: 1.5rem; } }
 
 .links {
@@ -321,7 +322,7 @@ body {
     @media (min-width: 600px) {
       .portfolio__folder {
         left: 78%; } }
-  .portfolio__image--1, .portfolio__image--2 {
+  .portfolio__image--1, .portfolio__image--2, .portfolio__image--3, .portfolio__image--4 {
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
     width: 100%;
@@ -331,6 +332,10 @@ body {
     background-image: url("../../img/toDo.PNG"); }
   .portfolio__image--2 {
     background-image: url("../../img//Nookslibrary.PNG"); }
+  .portfolio__image--3 {
+    background-image: url("../../img/expenseTrack.PNG"); }
+  .portfolio__image--4 {
+    background-image: url("../../img/ShoppingCart.PNG"); }
   .portfolio__item {
     border-radius: 1.5rem;
     display: flex;
