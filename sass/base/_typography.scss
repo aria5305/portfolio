@@ -136,6 +136,7 @@
         text-align: center;
         font-size: 1.3rem;
         width: 36%;
+        padding: 0 0.3rem;
         margin-top: 1.5rem;
         margin-bottom: 0.5rem;
 
@@ -148,8 +149,7 @@
 @include respond-to('large') {
         .tag--small {
                 width: 55%;
-                padding: 0 0.3rem;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
         }
 }
 .links {

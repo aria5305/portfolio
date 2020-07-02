@@ -92,7 +92,8 @@
                 &--1,
                 &--2,
                 &--3,
-                &--4 {
+                &--4,
+                &--5 {
                         border-top-left-radius: 1.5rem;
                         border-bottom-left-radius: 1.5rem;
                         width: 100%;
@@ -114,6 +115,10 @@
 
                 &--4 {
                         background-image: url('../../img/ShoppingCart.PNG');
+                }
+
+                &--5{
+                        background-image:url('../../img/Portfolio.PNG');
                 }
         }
 
