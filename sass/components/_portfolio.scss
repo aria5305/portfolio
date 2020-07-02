@@ -90,7 +90,10 @@
 
         &__image {
                 &--1,
-                &--2 {
+                &--2,
+                &--3,
+                &--4,
+                &--5 {
                         border-top-left-radius: 1.5rem;
                         border-bottom-left-radius: 1.5rem;
                         width: 100%;
@@ -104,6 +107,18 @@
 
                 &--2 {
                         background-image: url('../../img//Nookslibrary.PNG');
+                }
+
+                &--3 {
+                        background-image: url('../../img/expenseTrack.PNG');
+                }
+
+                &--4 {
+                        background-image: url('../../img/ShoppingCart.PNG');
+                }
+
+                &--5{
+                        background-image:url('../../img/Portfolio.PNG');
                 }
         }
 

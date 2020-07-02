@@ -182,6 +182,7 @@ body {
   text-align: center;
   font-size: 1.3rem;
   width: 36%;
+  padding: 0 0.3rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem; }
   .tag--small,
@@ -191,12 +192,15 @@ body {
 @media (min-width: 900px) {
   .tag--small {
     width: 55%;
-    font-size: 1.5rem; } }
+    font-size: 1.2rem; } }
 
 .links {
   text-decoration: none;
   color: var(--light-blue);
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  transition: all .3s ease; }
+  .links:hover {
+    text-decoration: underline; }
 
 .btn {
   border: 1px solid var(--orange);
@@ -321,7 +325,7 @@ body {
     @media (min-width: 600px) {
       .portfolio__folder {
         left: 78%; } }
-  .portfolio__image--1, .portfolio__image--2 {
+  .portfolio__image--1, .portfolio__image--2, .portfolio__image--3, .portfolio__image--4, .portfolio__image--5 {
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
     width: 100%;
@@ -331,6 +335,12 @@ body {
     background-image: url("../../img/toDo.PNG"); }
   .portfolio__image--2 {
     background-image: url("../../img//Nookslibrary.PNG"); }
+  .portfolio__image--3 {
+    background-image: url("../../img/expenseTrack.PNG"); }
+  .portfolio__image--4 {
+    background-image: url("../../img/ShoppingCart.PNG"); }
+  .portfolio__image--5 {
+    background-image: url("../../img/Portfolio.PNG"); }
   .portfolio__item {
     border-radius: 1.5rem;
     display: flex;
@@ -509,7 +519,7 @@ footer {
     color: #232323;
     transition: all 0.3s ease-in; }
     .menuToggle__link:hover {
-      color: #fcc224; }
+      color: var(--orange); }
     @media (min-width: 600px) {
       .menuToggle__link {
         margin: 0 1rem; } }
