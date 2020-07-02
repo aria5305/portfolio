@@ -197,7 +197,10 @@ body {
 .links {
   text-decoration: none;
   color: var(--light-blue);
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  transition: all .3s ease; }
+  .links:hover {
+    text-decoration: underline; }
 
 .btn {
   border: 1px solid var(--orange);
@@ -514,7 +517,7 @@ footer {
     color: #232323;
     transition: all 0.3s ease-in; }
     .menuToggle__link:hover {
-      color: #fcc224; }
+      color: var(--orange); }
     @media (min-width: 600px) {
       .menuToggle__link {
         margin: 0 1rem; } }

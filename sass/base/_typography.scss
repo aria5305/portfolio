@@ -156,4 +156,10 @@
         text-decoration: none;
         color: var(--light-blue);
         font-size: 1.7rem;
+      
+        transition: all .3s ease;
+
+        &:hover{
+                text-decoration: underline;
+        }
 }
