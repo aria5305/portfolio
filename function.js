@@ -1,6 +1,5 @@
 /* TypeWriter fucntion*/
 
-    // https://codepen.io/Coding_Journey/pen/BEMgbX
     const typing = (() => {
         // select the elements
         const typedTextSpan = 

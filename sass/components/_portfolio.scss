@@ -55,12 +55,7 @@
                         transition: all 0.3s;
                 }
 
-                // &:hover i {
-                //         color: $orange;
-
-                //         // position: relative;
-                // }
-
+                
                 &:hover i::after {
                         opacity: 1;
                         transition: all 0.3s;

@@ -6,7 +6,6 @@
         height: 40vh;
         width: 100%;
         position: relative;
-        // border: 1px solid $dark-blue;
 
         @include respond-to('small') {
                 margin-top: 40%;
